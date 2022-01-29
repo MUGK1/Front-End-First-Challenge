@@ -1,0 +1,128 @@
+/*
+
+mobile phone: 375px == 23.4em 
+breakpoint for mobile is:
+- phone
+
+
+*/
+* {
+  margin: 0 auto;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+  @media only screen and (max-width: 23.4em) {
+    html {
+      font-size: 69%; } }
+
+body {
+  fill: #7280a7;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  max-height: 100vh;
+  background: url(../images/pattern-background-desktop.svg) no-repeat;
+  background-size: contain;
+  background-color: #e0e8ff; }
+  @media only screen and (max-width: 23.4em) {
+    body {
+      background: url(../images/pattern-background-mobile.svg) no-repeat;
+      background-size: contain;
+      background-color: #e0e8ff; } }
+
+.info__name {
+  font-size: 1.7rem;
+  margin-top: 3rem;
+  margin-bottom: 1.3rem;
+  font-weight: 900; }
+
+.info__features {
+  color: #7280a7;
+  line-height: 1.7;
+  font-weight: 500;
+  font-size: 1rem;
+  width: 70%;
+  margin: 0 auto; }
+
+.order {
+  display: flex;
+  width: 87%;
+  margin: 1rem auto;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f7ff;
+  padding: 1rem 1.4rem;
+  border-radius: .7rem; }
+  .order__icon {
+    height: 3rem;
+    width: 3rem; }
+  .order__middle {
+    margin-right: 6rem;
+    line-height: 1.6;
+    flex-grow: 1; }
+    .order__middle-title {
+      font-size: 1rem; }
+  .order__change-link:link, .order__change-link:visited {
+    color: #3829e0;
+    font-weight: 700; }
+  .order__change-link:hover {
+    text-decoration: none;
+    color: #7280a7; }
+
+.purchase__proceed:link, .purchase__proceed:visited {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  background-color: #3829e0;
+  padding: .9rem 0;
+  width: 88%;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 1.6rem;
+  box-shadow: 0 20px 2rem rgba(56, 41, 224, 0.2); }
+
+.purchase__proceed:hover {
+  background-color: #5371c6; }
+
+.purchase__cancel:link, .purchase__cancel:visited {
+  display: block;
+  text-decoration: none;
+  color: #7280a7;
+  font-weight: 700; }
+
+.purchase__cancel:hover {
+  color: #1f2f56; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  margin-left: 1rem;
+  margin-bottom: .4rem;
+  font-size: .8rem; }
+  .footer__frontendmentor:link, .footer__frontendmentor:visited, .footer__khaled:link, .footer__khaled:visited {
+    text-decoration: none;
+    color: #3829e0; }
+
+.container {
+  max-width: 27rem;
+  background-color: #fff;
+  margin-top: 5rem;
+  border-radius: 1rem;
+  outline: none;
+  padding: 0 0 3rem 0;
+  box-shadow: 0 9px 80px rgba(0, 0, 0, 0.2);
+  overflow: hidden; }
+  @media only screen and (max-width: 23.4em) {
+    .container {
+      margin-top: 9rem; } }
+
+.header {
+  height: 13.7rem;
+  background: url(../images/illustration-hero.svg) no-repeat;
+  background-size: cover; }

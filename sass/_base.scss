@@ -1,0 +1,36 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  @include size(phone) {
+    font-size: 69%; // 1rem = 10px
+  }
+}
+
+body {
+  fill: $color-Desaturated-blue;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  max-height: 100vh;
+  background: url(../images/pattern-background-desktop.svg) no-repeat;
+  background-size: contain;
+  background-color: $color-Pale-blue;
+
+  @include size(phone) {
+    background: url(../images/pattern-background-mobile.svg) no-repeat;
+    background-size: contain;
+    background-color: $color-Pale-blue;
+  }
+
+}

@@ -1,0 +1,20 @@
+
+
+/*
+
+mobile phone: 375px == 23.4em 
+breakpoint for mobile is:
+- phone
+
+
+*/
+
+@mixin size($breakpoint) {
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width:23.4em /*375px*/) {
+            @content;
+        }
+    }
+    
+}
